@@ -20,7 +20,7 @@ wt.weather(ak,city,function(err , data){
 });
 ```
 #### console.log(data); 结果如下图
-![参考图片](http://netpi.github.io/resource/images/weather01.png)
+![参考图片](http://pistatic.qiniudn.com/images/weather01.png?imageView2/1/w/500/)
 ### 2 回复历史上的今天
 ```
 wt.history(function (err,data) {
@@ -32,4 +32,4 @@ wt.history(function (err,data) {
   })
 ```
 #### console.log(data); 结果如下图
-![参考图片](http://netpi.github.io/resource/images/history01.png)
+![参考图片](http://pistatic.qiniudn.com/images/history01.png?imageView2/1/w/400/)
