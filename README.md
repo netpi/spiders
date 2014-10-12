@@ -1,4 +1,35 @@
-wechat-tools
-============
+## wechat-tools 是微信公众平台开发者的实用小工具
+## 安装
+```
+npm install wechat-tools -save;
+```
+## 使用
+### 1 回复天气预报
+此为共享 ak = uD67wmZzhi3RFcmTkGoks2Dr,实际应用时建议去[百度开发者](developer.baidu.com/map/index.php)自行申请ak
 
-微信公众平台 回复天气预报、历史今天等小功能合集。
+```
+var wt = request('wechat-tools');
+var ak = 'uD67wmZzhi3RFcmTkGoks2Dr';//
+var city = '北京';
+wt.weather(ak,city,function(err , data){
+    if(err){
+      throw err;
+    }else{
+     console.log(data);
+   }
+});
+```
+#### console.log(data); 结果如下图
+![参考图片](http://netpi.github.io/resource/images/weather01.png)
+### 2 回复历史上的今天
+```
+wt.history(function (err,data) {
+    if(err){
+      throw err;
+    }else{
+      console.log(data);
+    }
+  })
+```
+#### console.log(data); 结果如下图
+![参考图片](http://netpi.github.io/resource/images/history01.png)

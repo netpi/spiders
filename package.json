@@ -1,0 +1,14 @@
+{
+  "name": "wechat-tools",
+  "version": "0.0.1",
+  "description": "wechat 回复小工具 ，包括天气预报、历史今天等实用功能",
+  "main": "index.js",
+  "keywords": [
+    "wechat",
+    "weixin"
+  ],
+  "author": "netpi",
+  "dependencies": {
+    "urllib": "^1.5.2"
+  }
+}
