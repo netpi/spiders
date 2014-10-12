@@ -4,7 +4,7 @@
 
 ## 安装
 ```
-npm install wechat-tools -save;
+npm install wechat-tools --save;
 ```
 ### 1 生成可以直接回复的‘天气预报’
 此为共享 ak = uD67wmZzhi3RFcmTkGoks2Dr,实际应用时建议去[百度开发者](http://developer.baidu.com/map/index.php)自行申请ak
