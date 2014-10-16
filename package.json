@@ -1,7 +1,7 @@
 {
   "name": "wechat-tools",
-  "version": "0.0.1",
-  "description": "wechat 回复小工具 ，包括天气预报、历史今天等实用功能",
+  "version": "0.0.2",
+  "description": "wechat 回复小工具 ，包括天气预报、历史今天、翻译工具 等实用功能",
   "main": "index.js",
   "keywords": [
     "wechat",
