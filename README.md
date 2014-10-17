@@ -1,4 +1,7 @@
-## wechat-tools 让您的公众平台有可以回复‘天气预报’、‘历史上的今天’ 等
+## wechat-tools
+
+赶快为你的公众平台增加 ‘天气预报’、‘历史上的今天’ ‘翻译助手’ ‘人脸识别’ 等小功能吧
+
 源码地址 [netpi/wechat-tools](https://github.com/netpi/wechat-tools)
 
 
