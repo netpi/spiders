@@ -4,11 +4,20 @@
 
 推荐微信公众平台的开发者配合使用 [node-webot/wechat](https://github.com/node-webot/wechat)
 
+### 功能预览
+
+1 ，天气预报 （获取中国任意城市 三天内的天气预报）
+
+2 ，历史上的今天 （获取历史上的今天 发生的大事件）
+
+3 ，翻译助手（自动检查语言并且翻译-支持12种语言）
+
+
 ## 安装
 ```
 npm install wechat-tools --save;
 ```
-### 1 生成可以直接回复的‘天气预报’
+### 1 天气预报 （获取中国任意城市 三天内的天气预报）
 此为共享 ak = uD67wmZzhi3RFcmTkGoks2Dr,实际应用时建议去[百度开发者](http://developer.baidu.com/map/index.php)自行申请ak
 
 ```
@@ -25,7 +34,7 @@ wt.weather(ak,city,function(err , data){
 ```
 #### console.log(data); 结果如下图
 ![参考图片](http://pistatic.qiniudn.com/images/weather01.png?imageView2/1/w/500/)
-### 2 生成可以直接回复的‘历史上的今天’
+### 2 历史上的今天 （获取历史上的今天 发生的大事件）
 ```
 wt.history(function (err,data) {
     if(err){
@@ -38,7 +47,7 @@ wt.history(function (err,data) {
 #### console.log(data); 结果如下图
 ![参考图片](http://pistatic.qiniudn.com/images/history01.png?imageView2/1/w/400/)
 
-### 3  翻译小助手
+### 3 翻译助手（自动检查语言并且翻译-支持12种语言）
 
 支持语言种类：
 中文、英语、日语、韩语、德语、法语、俄语、泰语、意大利语、西班牙语、葡萄牙语、阿拉伯语
