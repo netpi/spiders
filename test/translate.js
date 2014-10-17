@@ -6,9 +6,9 @@ function translate() {
       console.warn('err.....');
       console.warn(err.toString());
     } else {
-      console.log("msg..........")
-      console.log(data)
-    };
+      console.log("msg..........");
+      console.log(data);
+    }
   });
-};
+}
 translate();

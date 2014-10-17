@@ -12,7 +12,7 @@
 
 3 ，翻译助手（自动检查语言并且翻译-支持12种语言）
 
-
+4 ，人脸识别(分析某一张照片上的人脸信息)
 ## 安装
 ```
 npm install wechat-tools --save;
@@ -83,6 +83,33 @@ var word = '周末放假'; // 要翻译的词汇
   });
 
 ```
+
+### 4  人脸识别 (分析某一张照片上的人脸信息)
+
+  建议去 [face++](http://www.faceplusplus.com.cn/) 官网申请api_key、api_secret
+
+```
+
+var wt = request('wechat-tools');
+
+var option = {
+    api_key : '0ef14fa726ce34d820c5a44e57fef470',
+    api_secret : '4Y9YXOMSDvqu1Ompn9NSpNwWQFHs1hYD',
+    imgurl : 'http://cn.faceplusplus.com/static/resources/python_demo/1.jpg'
+  };
+
+wt.face(option , function (err,data) {
+  if(err){
+    // err ...
+  }else{
+    var face1 = JSON.parse(data).face[0];
+      console.log(face1.attribute.age); // => { range: 7, value: 33 } （33岁 偏差 7）
+      console.log(face1.attribute.gender); // => { confidence: 99.94, value: 'Male' } （女 可信度99.94/%）
+      console.log(face1.attribute.race); // => { confidence: 99.6939, value: 'White' } (白种人 可信度99.6939%)
+  }
+});
+```
+详细结果分析参看 [face++ api文档](http://www.faceplusplus.com.cn/detection_detect/)
 
 ##  应用
 ![参考图片](http://pistatic.qiniudn.com/images/history-code.jpg?imageView2/1/w/300/)

@@ -6,6 +6,6 @@ function history() {
     }else{
       console.log(data);
     }
-  })
+  });
 }
 history();
