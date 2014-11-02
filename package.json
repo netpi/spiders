@@ -1,6 +1,6 @@
 {
   "name": "wechat-tools",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "wechat 回复小工具 ，包括天气预报、历史今天、翻译工具、人脸识别 等实用功能",
   "main": "index.js",
   "keywords": [
@@ -10,5 +10,10 @@
   "author": "netpi",
   "dependencies": {
     "urllib": "^1.5.2"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.2",
+    "mocha": "^2.0.1",
+    "should": "^4.1.0"
   }
 }

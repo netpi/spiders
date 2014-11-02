@@ -1,25 +1,27 @@
-## wechat-tools
-
-赶快为你的公众平台增加 ‘天气预报’、‘历史上的今天’ ‘翻译助手’ ‘人脸识别’ 等小功能吧
-
+## wechat-tools 让您的公众平台有可以回复‘天气预报’、‘历史上的今天’ 等
 源码地址 [netpi/wechat-tools](https://github.com/netpi/wechat-tools)
-
 
 
 推荐微信公众平台的开发者配合使用 [node-webot/wechat](https://github.com/node-webot/wechat)
 
 ### 功能预览
 
-1 ，[天气预报](https://github.com/netpi/wechat-tools#1-天气预报-获取中国任意城市-三天内的天气预报) （获取中国任意城市 三天内的天气预报）
+1 ，天气预报 （获取中国任意城市 三天内的天气预报）
 
-2 ，[历史上的今天](https://github.com/netpi/wechat-tools#2-历史上的今天-获取历史上的今天-发生的大事件) （获取历史上的今天 发生的大事件）
+2 ，历史上的今天 （获取历史上的今天 发生的大事件）
 
-3 ，[翻译助手](https://github.com/netpi/wechat-tools#3-翻译助手自动检查语言并且翻译-支持12种语言)（自动检查语言并且翻译-支持12种语言）
+3 ，翻译助手（自动检查语言并且翻译-支持12种语言）
 
-4 ，[人脸识别](https://github.com/netpi/wechat-tools#4--人脸识别-分析某一张照片上的人脸信息) (分析某一张照片上的人脸信息)
+4 ，人脸识别(分析某一张照片上的人脸信息)
 ## 安装
 ```
 npm install wechat-tools --save;
+```
+## 测试
+
+```
+  make test ;
+
 ```
 ### 1 天气预报 （获取中国任意城市 三天内的天气预报）
 此为共享 ak = uD67wmZzhi3RFcmTkGoks2Dr,实际应用时建议去[百度开发者](http://developer.baidu.com/map/index.php)自行申请ak
@@ -117,10 +119,3 @@ wt.face(option , function (err,data) {
 
 ##  应用
 ![参考图片](http://pistatic.qiniudn.com/images/history-code.jpg?imageView2/1/w/300/)
-
-## License (MIT)
-
-The MIT License (MIT)
-
-
-
