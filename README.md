@@ -26,7 +26,7 @@ npm install wechat-tools --save;
 ### 1 天气预报 （获取中国任意城市 三天内的天气预报）
 此为共享 ak = uD67wmZzhi3RFcmTkGoks2Dr,实际应用时建议去[百度开发者](http://developer.baidu.com/map/index.php)自行申请ak
 
-```
+```js
 var wt = request('wechat-tools');
 var ak = 'uD67wmZzhi3RFcmTkGoks2Dr';//
 var city = '北京';
@@ -41,7 +41,7 @@ wt.weather(ak,city,function(err , data){
 #### console.log(data); 结果如下图
 ![参考图片](http://pistatic.qiniudn.com/images/weather01.png?imageView2/1/w/500/)
 ### 2 历史上的今天 （获取历史上的今天 发生的大事件）
-```
+```js
 wt.history(function (err,data) {
     if(err){
       throw err;
@@ -62,7 +62,7 @@ wt.history(function (err,data) {
 翻译服务会自动检测源语言语种，并根据源语言的语种按照规则设置目标语言的语种。当源语言为非中文时，目标语言自动设置为中文。当源语言为中文时，目标语言自动设置为英文。
 
 #### 英译汉
-```
+```js
 var wt = request('wechat-tools');
 var ak = 'uD67wmZzhi3RFcmTkGoks2Dr';
 var word = '周末放假'; // 要翻译的词汇
@@ -75,7 +75,7 @@ var word = '周末放假'; // 要翻译的词汇
   });
 ```
 #### 汉译英
-```
+```js
 
   var wt = request('wechat-tools');
   var ak = 'uD67wmZzhi3RFcmTkGoks2Dr';
@@ -94,7 +94,7 @@ var word = '周末放假'; // 要翻译的词汇
 
   建议去 [face++](http://www.faceplusplus.com.cn/) 官网申请api_key、api_secret
 
-```
+```js
 
 var wt = request('wechat-tools');
 
